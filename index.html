@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" type="image/png" href="images/ico.png" />
+    <title>Etch-a-sketch</title>
+</head>
+
+<body>
+    <div class="header">Etch-A-Sketch</div>
+    <div class="content">
+        <div class="controls">
+            <span id="colorPickerCircle"></span>
+            <input type="color" id="colorPicker">
+            <input type="button" class="buttonMode" id="colorMode" value="Color mode">
+            <input type="button" class="buttonMode" id="rainbowMode" value="Rainbow mode">
+            <input type="button" class="buttonMode" id="eraserMode" value="Eraser">
+            <input type="button" id="clear" value="Clear">
+            <div id="padSizeLabel">16x16</div>
+            <input type="range" id="size" min="1" max="32" value="16">
+        </div>
+        <div class="sketchPad">
+
+        </div>
+    </div>
+</body>
+
+</html>

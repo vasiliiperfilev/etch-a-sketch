@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   background-color: lightgray;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   height: 100vh;
+}
+
+.header {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(53, 53, 53);
+}
+
+.content {
+    display: flex;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    width: 34%;
+}
+
+#colorPickerCircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color:black;
+    margin: auto;
+    transition: 0.3s;
+}
+
+#colorPicker {
+    display: none;
+}
+
+input {
+    background-color: lightgray;
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid rgb(53, 53, 53);
+    padding: 10px;
+    width: 40%;
+    min-width: 110px;
+    margin: auto;
+    transition: 0.3s;
+}
+
+input[type='range']{
+    padding: 0;
+}
+
+input:hover, #colorPickerCircle:hover {
+    transform: scale(1.1);
+}
+
+.modeSelected {
+    background-color: rgb(53, 53, 53);
+    color: whitesmoke;
+}
+
+.sketchPad {
+    width: 400px;
+    height: 400px;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 5px rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: stretch;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+}
+
+.pixel {
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .controls {
+        width: 100%;
+    }
+
+    .sketchPad {
+        width: 350px;
+        height: 350px;
+    }
+  }
