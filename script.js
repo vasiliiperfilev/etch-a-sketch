@@ -56,7 +56,7 @@ function changeCanvasSize() {
         }
         else {
             pixel.addEventListener('touchstart', changeColor);
-            pixel.addEventListener('touchmove', changeColor);
+            pixel.addEventListener('touchmove', changeColorTouch);
         }
     })
 }
@@ -121,4 +121,10 @@ function changeColor() {
             this.style.backgroundColor = 'whitesmoke'
         }
     }
+}
+
+function changeColorTouch(e){
+    let pixel = document.elementFromPoint(e.touches[0].clientX, e.touches[0].clientY);
+    let event = new Event('touchstart');
+    pixel.dispatchEvent(event);
 }
