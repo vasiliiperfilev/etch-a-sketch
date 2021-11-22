@@ -55,7 +55,7 @@ function changeCanvasSize() {
             pixel.addEventListener('mouseover', changeColor);
         }
         else {
-            pixel.addEventListener('touch', changeColor);
+            pixel.addEventListener('touchstart', changeColor);
         }
     })
 }
