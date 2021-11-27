@@ -83,6 +83,7 @@ input:hover, #colorPickerCircle:hover {
     height: 100%;
     width: 100%;
     flex: 1;
+    touch-action: none;
 }
 
 .pixel {
@@ -94,6 +95,7 @@ input:hover, #colorPickerCircle:hover {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    touch-action: none;
 }
 
 @media only screen and (max-width: 600px) {
